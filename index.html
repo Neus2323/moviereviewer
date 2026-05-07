@@ -1,40 +1,62 @@
-<html>
+<!doctype html>
+<html lang="es">
 <head>
-<title>Movie Reviewer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Reviewer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<section>
-<h2><font color="911b00"><strong>INTRODUCCIÓ</strong></font></h2>
-<p>¡Hola! Mi nombre es Neus y bienvenidos y bienvenidas al Movie Reviewer, una web donde yo,<br>
-una adolescente de 17 años con ninguna experiencia en el cine,resumo películas de mi agrado,<br>
-además de dar mi humilde opinión y buscar información sobre ellas y sus actores.<br>
-<br>
-Me gustaría recalcar que yo no soy profesional en este campo, nunca he recibido clases de cine <br>
-ni nada por el estilo, de hecho, estoy estudiando un bachillerato científico. Hago esto con amor <br>
-y cariño al cine, porque es un campo que me lleva gustando desde pequeña y disfruto de hacer <br>
-cosas como esta.<br>
-<br>
-Espero de todo corazón que disfrutéis de estas páginas.<br>
-<br>
-¡Muchas gracias!</p>
-</section>
-<section>
-<h2><font color="911b00"><strong>RESUMENES</strong></font></h2>
-<h3><font color="gray"><strong>Pulsa la imagen, no el texto :)</strong></font></h3>
-<figure>
-<a href="gnomeoyjulieta.html"><img src="resum/gyj.jpg" height="200"></a>
-<figcaption><em>Resumen de la película “Gnomeo y Julieta”</em></figcaption>
-</figure>
-<br>
-<figure>
-<a href="laniñeramágica.html"><img src="resum/nn.jpg" height="200"></a>
-<figcaption><em>Resumen de la película “Nanny McPhee: la niñera mágica”</em></figcaption>
-</figure>
-<br>
-<figure>
-<a href="losjuegosdelhambre.html"><img src="resum/jh.jpg" height="200"></a>
-<figcaption><em>Resumen de la película “Los juegos del hambre”</em></figcaption>
-</figure>
-</section>
+  <main class="page-shell">
+    <header class="hero">
+      <p class="kicker">Críticas con cariño cinéfilo</p>
+      <h1>Movie Reviewer</h1>
+      <p>Una colección personal de resúmenes, opiniones y pequeños descubrimientos sobre películas que merecen un ratito de sofá, palomitas y conversación.</p>
+    </header>
+
+    <div class="content-grid">
+      <section class="panel" aria-labelledby="intro-title">
+        <h2 class="section-title" id="intro-title">Introducción</h2>
+        <p>¡Hola! Mi nombre es Neus y bienvenidos y bienvenidas a Movie Reviewer, una web donde yo, una adolescente de 17 años con ninguna experiencia en el cine, resumo películas de mi agrado.</p>
+        <p>Además de contar de qué van, también doy mi humilde opinión y busco información sobre ellas y sus actores.</p>
+        <p>No soy profesional en este campo, nunca he recibido clases de cine y de hecho estoy estudiando un bachillerato científico. Hago esto con amor y cariño al cine, porque es algo que me lleva gustando desde pequeña.</p>
+        <p>Espero de todo corazón que disfrutéis de estas páginas. ¡Muchas gracias!</p>
+      </section>
+
+      <section class="panel" aria-labelledby="reviews-title">
+        <h2 class="section-title" id="reviews-title">Resúmenes</h2>
+        <div class="movie-grid" aria-label="Lista de películas reseñadas">
+          <a class="movie-card" href="gnomeoyjulieta.html">
+            <img src="resum/gyj.jpg" alt="Cartel de Gnomeo y Julieta">
+            <span class="movie-card__body">
+              <span class="movie-card__eyebrow">Animación · Romance</span>
+              <h3>Gnomeo y Julieta</h3>
+              <p>Shakespeare, jardines rivales y una banda sonora llena de Elton John.</p>
+            </span>
+          </a>
+
+          <a class="movie-card" href="laniñeramágica.html">
+            <img src="resum/nn.jpg" alt="Cartel de Nanny McPhee: la niñera mágica">
+            <span class="movie-card__body">
+              <span class="movie-card__eyebrow">Fantasía · Familiar</span>
+              <h3>Nanny McPhee: la niñera mágica</h3>
+              <p>Magia, lecciones importantes y una historia que llega al corazón.</p>
+            </span>
+          </a>
+
+          <a class="movie-card" href="losjuegosdelhambre.html">
+            <img src="resum/jh.jpg" alt="Cartel de Los juegos del hambre">
+            <span class="movie-card__body">
+              <span class="movie-card__eyebrow">Distopía · Aventura</span>
+              <h3>Los juegos del hambre</h3>
+              <p>Supervivencia, valentía y una chispa de revolución en Panem.</p>
+            </span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <p class="footer-note">Pulsa cualquier tarjeta para leer la reseña completa.</p>
+  </main>
 </body>
 </html>
